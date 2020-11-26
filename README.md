@@ -1,4 +1,4 @@
-# EuhatExpert
+# EuhatGift
 This is an open source code of Euhat Gift project.
 
 ## Official site
