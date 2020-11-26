@@ -235,6 +235,12 @@ void CjsonWrapper::pushBack(string val)
 }
 
 template<>
+void CjsonWrapper::pushBack(const char *val)
+{
+	pushBack(string(val));
+}
+
+template<>
 void CjsonWrapper::pushBack(int val)
 {
 	intArray_.push_back(val);

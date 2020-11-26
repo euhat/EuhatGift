@@ -65,12 +65,12 @@ public:
 		{
 			delete tmp_;
 		}
-		iterator &operator++()
+		iterator &operator++(int)
 		{
 			idx_++;
 			return *this;
 		}
-		bool operator!=(iterator &other)
+		bool operator!=(const iterator &other)
 		{
 			return idx_ != other.idx_;
 		}

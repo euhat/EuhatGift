@@ -51,6 +51,12 @@ int tstRead()
 		JTree nodeTst = tree.get<JTree>("nodeTst");
 		double doubleTst = nodeTst.get<double>("doubleTst");
 
+		JTree arrayTst = tree.get<JTree>("arrayTst");
+		int i = 0;
+		for (JTree::iterator it = arrayTst.begin(); it != arrayTst.end(); it++, i++)
+		{
+			printf("arrayTst[%d]:[%s]\n", i, it->get<string>("").c_str());
+		}
 		printf("intTst:[%d], strTst:[%s], doubleTst:[%f]\n", intTst, strTst.c_str(), (float)doubleTst);
 	}
 	catch (JTree::ParseException &e)
@@ -69,6 +75,11 @@ int tstWrite()
 	JTree tree;
 	tree.put("intTst", 123);
 	tree.put("strTst", "hello, how are you?");
+	JTree arrayTst;
+	arrayTst.pushBack("Mike");
+	arrayTst.pushBack("Jackson");
+	arrayTst.pushBack("Marry");
+	tree.put("arrayTst", &arrayTst);
 	JTree nodeTst;
 	nodeTst.put("doubleTst", 0.123);
 	tree.put("nodeTst", &nodeTst);
