@@ -16,7 +16,7 @@ This is an open source code of Euhat Gift project.
 1. In Linux OS, change directory to EuhatGift/test/, type make to compile the test code, then you can run tstCjsonWrapper and tstIniOp to know how they work.
 
 ## About 3rd open sources
-1. cJSON, copyright belongs to Dave Gamble
+1. cJSON, copyright belongs to Dave Gamble.
 
 ## FAQ
 
