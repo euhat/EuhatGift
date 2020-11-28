@@ -5,11 +5,11 @@ This is an open source code of Euhat Gift project.
 [http://euhat.com/wp/category/%e8%bd%af%e4%bb%b6/](http://euhat.com/wp/category/%e8%bd%af%e4%bb%b6/) 
 
 ## It has features
-* A c++ wapper class for cJSON library.
+* A c++ wrapper class for cJSON library.
 * Ini file read & write.
 
 ## Why to create these utilities
-1. CjsonWrapper, the Boost library for ini file read & write is very convenient for writing business code, but which treats integer as number string is problematic. And consideration on efficiency and multi-language friendliness, I write CjsonWrapper, a c++ wapper class for cJSON library.
+1. CjsonWrapper, the Boost library for ini file read & write is very convenient for writing business code, but which treats integer as number string is problematic. And consideration on efficiency and multi-language friendliness, I write CjsonWrapper, a c++ wrapper class for cJSON library.
 2. IniOp, Win32 GetPrivateProfileStringA function has a defect that we must allocate a buffer in advance, but we don't know what size of the actual value buffer. So I rewrite ini file operation functions, namely IniOp, which is cross-platform also.
 
 ## How to build
